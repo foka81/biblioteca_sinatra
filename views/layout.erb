@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Sample SinatraAPP</title>
@@ -11,9 +11,47 @@
 		</style>
 	</head>
 	<body>
-			<main>
-			<div class="container"><%= yield %></div>
-		</main>
-		<script src="javascripts/main.js"></script>
+		<div class="container">
+			<div class="row">
+				<nav class="navbar navbar-default">
+					<div class="container-fluid">
+					</div>
+				</nav>
+		  </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+					<div class="card-body">
+						<ul>
+							<li><img src="svg/si-glyph-bed.svg"/></li>
+		        	<li><button type="button" class="btn btn-primary"> Listar Livros </button></li>
+		        	<li><button type="button" class="btn btn-primary"> Cadastrar Livros </button></li>
+							<li><button type="button" class="btn btn-primary"> Listar Clientes </button></li>
+		        	<li><button type="button" class="btn btn-primary"> Cadastrar Clientes </button></li>
+		        </ul>
+					</div>
+				</div>
+      </div>
+
+      <div class="col-md-9">
+				<div class="card">
+				 <div class="card-body">
+		        <div class="row">
+		          <h1>--- Listagem ---</h1>
+		        </div>
+				 </div>
+				</div>
+
+				<div class="card">
+				 <div class="card-body">
+		        <div class="row">
+		          <main><%= yield %></main>
+		        </div>
+				 </div>
+				</div>
+
+      </div>
+    </div>
+		</div>
 	</body>
-</html> -->
+</html>
