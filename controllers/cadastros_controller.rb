@@ -3,5 +3,5 @@ get '/cadastros' do
 end
 
 get '/paineladm' do
-  erb :paineladm, layout: true
+  erb :lista_cliente, layout: true
 end
