@@ -1,57 +1,68 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Sample SinatraAPP</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
-		<link rel="stylesheet" href="stylesheets/signin.css">
-		<link href="stylesheets/main.css" rel="stylesheet" media="screen">
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<style media="screen">
-		</style>
-	</head>
-	<body>
-		<div class="container">
-			<div class="row">
-				<nav class="navbar navbar-default">
-					<div class="container-fluid">
-					</div>
-				</nav>
-		  </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card">
-					<div class="card-body">
-						<ul>
-							<li><img src="svg/si-glyph-bed.svg"/></li>
-		        	<li><button type="button" class="btn btn-primary"> Listar Livros </button></li>
-		        	<li><button type="button" class="btn btn-primary"> Cadastrar Livros </button></li>
-							<li><button type="button" class="btn btn-primary"> Listar Clientes </button></li>
-		        	<li><button type="button" class="btn btn-primary"> Cadastrar Clientes </button></li>
-		        </ul>
-					</div>
-				</div>
-      </div>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Sample SinatraAPP</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+            <link rel="stylesheet" href="stylesheets/signin.css">
+            <link href="stylesheets/main.css" rel="stylesheet" media="screen">
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+            <style media="screen">
+            </style>
+        </head>
+        <body>
+            <nav class="navbar header-top fixed-top navbar-expand-lg  navbar-dark bg-dark">
+                <span class="navbar-toggler-icon leftmenutrigger"></span>
+                <a class="navbar-brand" href="#">LOGO</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+            aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav animate side-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Biblioteca
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Livros</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+                <div class="container-fluid">
+                    <div class="row flex-xl-nowrap">
+                      <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <ul>
+                                    <li><img src="svg/si-glyph-bed.svg"/></li>
+                                    <li><button type="button" class="btn btn-primary"> Listar Livros </button></li>
+                                    <li><button type="button" class="btn btn-primary"> Cadastrar Livros </button></li>
+                                    <li><button type="button" class="btn btn-primary"> Listar Clientes </button></li>
+                                    <li><button type="button" class="btn btn-primary"> Cadastrar Clientes </button></li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
 
-      <div class="col-md-9">
-				<div class="card">
-				 <div class="card-body">
-		        <div class="row">
-		          <h1>--- Listagem ---</h1>
-		        </div>
-				 </div>
-				</div>
-
-				<div class="card">
-				 <div class="card-body">
-		        <div class="row">
-		          <main><%= yield %></main>
-		        </div>
-				 </div>
-				</div>
-
-      </div>
-    </div>
-		</div>
-	</body>
-</html>
+                      <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <h1>--- Listagem ---</h1>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <main><%= yield %></main>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+        </body>
+    </html>
