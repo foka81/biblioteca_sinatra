@@ -1,3 +1,22 @@
+                <!-- Modal -->
+<div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="modalLabel">Excluir Item</h4>
+      </div>
+      <div class="modal-body">
+        Deseja realmente excluir este item?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Sim</button>
+	<button type="button" class="btn btn-default" data-dismiss="modal">Nao</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <h5 class="card-title">Lista de Clientes</h5>
 <table class="table">
     <thead>
@@ -20,7 +39,8 @@
                 <a class="btn btn-warning btn-xs" href="#">Editar</a>
             </td>
             <td>
-                <a class="btn btn-danger btn-xs" href="#">Excluir</a>
+
+                <a class="btn btn-danger btn-xs" href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
             </td>
         </tr>
         <tr>
