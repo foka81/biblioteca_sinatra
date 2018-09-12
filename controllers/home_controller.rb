@@ -1,3 +1,10 @@
+#Rota Login
 get '/' do
-  erb :home, layout: false
+  erb :login, layout: false
 end
+#Rota HomePage
+get '/paineladm' do
+  erb :home
+end
+
+
